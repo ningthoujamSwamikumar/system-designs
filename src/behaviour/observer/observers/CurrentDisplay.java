@@ -1,6 +1,5 @@
 package behaviour.observer.observers;
 
-import behaviour.observer.displays.Display;
 import behaviour.observer.observables.Observable;
 import behaviour.observer.observables.WeatherData;
 
@@ -13,6 +12,7 @@ public class CurrentDisplay implements Observer, Display {
 
     public CurrentDisplay(Observable observable) {
         this.observable = observable;
+        observable.addObserver(this);
     }
 
     @Override
