@@ -8,9 +8,9 @@ public class Restaurant {
         return factory.prepareBurger();
     }
 
-    public ? orderJuie(? factory){
-        return factory.prepare();
-    }
+//    public ? orderJuie(? factory){
+//        return factory.prepare();
+//    }
 
     /**
      * here, we cannot use the same burger factory and we need new kind of factory which return the new type i.e. juice
