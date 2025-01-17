@@ -13,3 +13,17 @@ This is like a summary or the points from the Head First Design Patterns.
 > ![img.png](images/observer-img.png)
 
 - Strive for loosely coupled designs between objects that interacts. [ When objects are loosely coupled, they can interact, but have very little knowledge about each other. In the observer pattern, the only thing the subject knows about the observer is that it implements a certain interface and vice versa.]
+- Classes should be open for extension but closed for modification. [ Our goal is to allow classes to be easily extended to incorporate new behaviour without modifying the existing code. If we accomplish this - we'll get designs that are resilient to change and flexible enough to take on new functionality to meet changing requirements. However applying this principle to everywhere can lead to complex, hard to understand code. ]
+
+> <b>Decorator Pattern</b>
+>> Decorator pattern attaches additional responsibility to an object dynamically. Decorator provide a flexible alternative to subclassing for extending functionality. ![img.png](images/decorator-img.png)  ![img.png](images/decorator-img2.png)
+
+> <b>Factory Method Pattern</b>
+> > Factory method defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory method lets a class defer instantiation to its subclasses.
+> ![factory-method-class-diagram.png](images/factory-method-img.png)
+
+- Dependency Inversion principle states that high level components shouldn't depend on low level components, both should depend on abstraction. Depend on abstraction. Do not depend on concrete class.
+
+> <b>Abstract Factory pattern</b>
+> > Abstract factory provides an interface to create a family of related products without specifying their concrete class.
+> ![abstract-factory-diagram.png](images/abstract-factory-img.png) Here, in our example of pizza store, PizzaStore will be the client code.
