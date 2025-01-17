@@ -17,6 +17,7 @@ public class Sugar implements CoffeeDecorator{
 
     @Override
     public int cost() {
+        System.out.println("Adding cost of sugar: " + 2);
         return this.coffee.cost() + this.extraCharge();
     }
 }
