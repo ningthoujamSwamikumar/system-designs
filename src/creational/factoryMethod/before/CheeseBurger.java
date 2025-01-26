@@ -2,6 +2,16 @@ package creational.factoryMethod.before;
 
 public class CheeseBurger implements Burger{
     public CheeseBurger() {
-        System.out.println("Cheese Burger");
+        System.out.println("Ordered Cheese Burger");
+    }
+
+    @Override
+    public void serve() {
+        System.out.println("Serving Cheese Burger");
+    }
+
+    @Override
+    public void prepare() {
+        System.out.println("Preparing your cheese burger");
     }
 }
